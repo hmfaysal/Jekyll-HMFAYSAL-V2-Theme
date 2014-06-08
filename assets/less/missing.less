@@ -1,0 +1,366 @@
+// Styles missing from the *.less sources, reconstructed from the minified
+// results.
+
+ol,ul {
+  padding: 0;
+}
+
+.block {
+  position: relative;
+  margin: 0 auto;
+  padding: 1.5em 1.25em;
+  max-width: 60em;
+}
+
+.close-btn {
+  display: block;
+  width: 2.625em;
+  height: 2.25em;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background: url(/assets/img/close-btn.svg) left center no-repeat;
+  background-size: 1.875em 1.875em;
+  overflow: hidden;
+  white-space: nowrap;
+  text-indent: 100%;
+  filter: alpha(Opacity=100);
+  opacity: 1;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.no-svg .close-btn {
+  background-image: url(/assets/img/close-btn.png);
+}
+
+.close-btn:focus,.close-btn:hover {
+  filter: alpha(Opacity=100);
+  opacity: 1;
+}
+
+.nav-btn {
+  display: block;
+  width: 2.625em;
+  height: 2.25em;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background: url(/assets/img/nav-icon.svg) left center no-repeat;
+  background-size: 1.875em 1.5em;
+  overflow: hidden;
+  white-space: nowrap;
+  text-indent: 100%;
+  filter: alpha(Opacity=70);
+  opacity: .7;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.no-svg .nav-btn {
+  background-image: url(/assets/img/nav-icon.png);
+}
+
+.nav-btn:focus,.nav-btn:hover {
+  filter: alpha(Opacity=100);
+  opacity: 1;
+}
+
+#outer-wrap {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+#inner-wrap {
+  position: relative;
+  width: 100%;
+}
+
+#nav {
+  z-index: 200;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  color: #fff;
+}
+
+#nav .close-btn {
+  display: none;
+}
+
+#nav .block-title {
+  border: 0;
+  clip: rect(0000);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+#nav .block {
+  z-index: 2;
+  position: relative;
+  padding: .75em 1.25em;
+  background: #fff;
+}
+
+#nav ul {
+  zoom: 1;
+  display: block;
+}
+
+#nav ul:after,#nav ul:before {
+  content: "";
+  display: table;
+}
+
+#nav ul:after {
+  clear: both;
+}
+
+#nav li {
+  display: block;
+}
+
+#nav li a {
+  display: block;
+  color: #ccc;
+  font-size: .875em;
+  line-height: 1.28571em;
+  font-weight: 700;
+  outline: 0;
+}
+
+#nav li a:focus,#nav li a:hover {
+  color: #000;
+  background: rgba(255,255,255,.1);
+}
+
+#nav li.is-active a {
+  color: #c91b26;
+}
+
+#top {
+  z-index: 100;
+  position: relative;
+  color: #fff;
+  background: #c91b26;
+}
+
+#top .block-title {
+  margin: 0;
+  font-size: 1.875em;
+  line-height: 1.2em;
+  text-align: center;
+  white-space: nowrap;
+}
+
+#top .nav-btn {
+  position: absolute;
+  top: 1.5em;
+  left: 1.875em;
+}
+
+#main {
+  background: #fff;
+}
+
+#main .block {
+  padding: 2.625em 1.875em;
+}
+
+footer[role=contentinfo] {
+  background: #ddd;
+}
+
+@media screen and (min-width: 45.0625em) {
+  #nav .block-title,#nav .close-btn,#top .nav-btn {
+    border: 0;
+    clip: rect(0000);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  #nav ul {
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  #nav li {
+    display: inline-block;
+    border-right: 1px solid rgba(255,255,255,.1);
+  }
+
+  #nav li:last-child {
+    border-right: 0;
+  }
+
+  #nav li a {
+    padding: .42857em .85714em;
+  }
+}
+
+@media screen and (max-width: 45em) {
+  #nav {
+    position: absolute;
+    top: 0;
+    padding-top: 5.25em;
+  }
+
+  #nav:not(:target) {
+    z-index: 1;
+    height: 0;
+  }
+
+  #nav:target .close-btn {
+    display: block;
+  }
+
+  #nav .close-btn {
+    position: absolute;
+    top: -3.75em;
+    left: 1.875em;
+  }
+
+  #nav .block {
+    position: relative;
+    padding: 0;
+  }
+
+  #nav li {
+    position: relative;
+    border-top: 1px solid rgba(255,255,255,.1);
+  }
+
+  #nav li:last-child {
+    border-bottom: 1px solid rgba(255,255,255,.1);
+  }
+
+  #nav li.is-active:after {
+    z-index: 50;
+    display: block;
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -.03125em;
+    margin-top: -.625em;
+    border-top: .625em transparent solid;
+    border-bottom: .625em transparent solid;
+    border-right: .625em #fff solid;
+  }
+
+  #nav li a {
+    padding: .85714em 2.14286em;
+  }
+
+  .js-ready #nav {
+    height: 100%;
+    width: 70%;
+    background: #c91b26;
+    -webkit-box-shadow: inset -1.5em 0 1.5em -.75em rgba(0,0,0,.25);
+    -moz-box-shadow: inset -1.5em 0 1.5em -.75em rgba(0,0,0,.25);
+    box-shadow: inset -1.5em 0 1.5em -.75em rgba(0,0,0,.25);
+  }
+
+  .js-ready #nav .block {
+    background: 0 0;
+  }
+
+  .js-ready #nav .close-btn {
+    display: block;
+    filter: alpha(Opacity=70);
+    opacity: .7;
+  }
+
+  .js-ready #nav .close-btn:focus,.js-ready #nav .close-btn:hover {
+    filter: alpha(Opacity=100);
+    opacity: 1;
+  }
+
+  .js-ready #nav {
+    left: -70%;
+  }
+
+  .js-ready #inner-wrap {
+    left: 0;
+  }
+
+  .js-nav #inner-wrap {
+    left: 70%;
+  }
+
+  .csstransforms3d.csstransitions.js-ready #nav {
+    left: 0;
+    -webkit-transform: translate3d(-100%,0,0);
+    -moz-transform: translate3d(-100%,0,0);
+    -ms-transform: translate3d(-100%,0,0);
+    -o-transform: translate3d(-100%,0,0);
+    transform: translate3d(-100%,0,0);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  .csstransforms3d.csstransitions.js-ready #inner-wrap {
+    left: 0 !important;
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    -o-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    -webkit-transition: 0 500ms ease;
+    -moz-transition: 0 500ms ease;
+    -o-transition: 0 500ms ease;
+    transition: transform 500ms ease;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  .csstransforms3d.csstransitions.js-nav #inner-wrap {
+    -webkit-transform: translate3d(70%,0,0) scale3d(1,1,1);
+    -moz-transform: translate3d(70%,0,0) scale3d(1,1,1);
+    -ms-transform: translate3d(70%,0,0) scale3d(1,1,1);
+    -o-transform: translate3d(70%,0,0) scale3d(1,1,1);
+    transform: translate3d(70%,0,0) scale3d(1,1,1);
+  }
+
+  .csstransforms3d.csstransitions.js-ready #nav .block {
+    filter: alpha(Opacity=70);
+    opacity: .7;
+    -webkit-transition: opacity 300ms 100ms 500ms ease;
+    -webkit-transition-delay: ease,0s;
+    -moz-transition: opacity 300ms 100ms ease,-moz-transform 500ms ease;
+    -o-transition: opacity 300ms 100ms ease,-o-transform 500ms ease;
+    transition: opacity 300ms 100ms ease,transform 500ms ease;
+    -webkit-transform: translate3d(70%,0,0) scale3d(0.9,.9,.9);
+    -moz-transform: translate3d(70%,0,0) scale3d(0.9,.9,.9);
+    -ms-transform: translate3d(70%,0,0) scale3d(0.9,.9,.9);
+    -o-transform: translate3d(70%,0,0) scale3d(0.9,.9,.9);
+    transform: translate3d(70%,0,0) scale3d(0.9,.9,.9);
+    -webkit-transform-origin: 50% 0;
+    -moz-transform-origin: 50% 0;
+    -ms-transform-origin: 50% 0;
+    -o-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+  }
+
+  .csstransforms3d.csstransitions.js-nav #nav .block {
+    filter: alpha(Opacity=100);
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    -o-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+  }
+}
